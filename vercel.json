@@ -1,13 +1,16 @@
 {
-  "version": 2,
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/backend/api/index.ts"
+  "projectSettings": {
+    "framework": "services"
+  },
+  "experimentalServices": {
+    "frontend": {
+      "root": "frontend",
+      "routePrefix": "/",
+      "framework": "vite"
     },
-    {
-      "source": "/(.*)",
-      "destination": "/frontend/dist/$1"
+    "backend": {
+      "root": "backend",
+      "routePrefix": "/api"
     }
-  ]
+  }
 }
