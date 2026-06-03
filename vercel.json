@@ -3,14 +3,6 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install && cd backend && npm install --legacy-peer-deps && cd ../frontend && npm install",
   "outputDirectory": "frontend/dist",
-  "env": {
-    "GROQ_API_KEY": "@groq_api_key",
-    "MONGODB_URI": "@mongodb_uri",
-    "JWT_SECRET": "@jwt_secret",
-    "LANGCHAIN_TRACING_V2": "true",
-    "LANGCHAIN_API_KEY": "@langchain_api_key",
-    "LANGCHAIN_PROJECT": "farmer-rag-evals"
-  },
   "routes": [
     {
       "src": "/api/(.*)",
